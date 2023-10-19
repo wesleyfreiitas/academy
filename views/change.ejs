@@ -1,0 +1,21 @@
+<%- include('./partials/header') -%>
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+    <div class="page">
+        <form method="POST" class="formLogin" action="/changepassword">
+            <h1>Redefinir senha</h1>
+            <p></p>
+            <label for="password">Senha</label>
+            <input type="password" name="password" placeholder="Digite sua senha" autofocus="true" />
+            <label for="password-confirme">Senha</label>
+            <input type="password-confirme" name="password-confirme" placeholder="Confirme sua senha" />
+            <input name="token" type="hidden" value=<%= token %>>
+            <a href="/">login</a><a href="/signup">Cadastre-se</a>
+            <input type="submit" value="Mudar senha" class="btn" />
+        </form>
+    </div>
+
+</body>
+<%- include('./partials/footer') -%>

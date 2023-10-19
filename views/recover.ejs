@@ -1,0 +1,19 @@
+<%- include('./partials/header'); -%>
+</head>
+    <div class="container">
+        <!-- <hr>  -->
+        <div class="card mt-5">
+            <div class="card-header">
+                <h2 >Redefinição de senha</h2>
+            </div>
+            <div class="card-body">
+                <form action="/recoverpassword" method="POST">
+                    <input class="form-control" name="email" type="email" placeholder="E-mail de login"><br>
+                    <button type="submit" class="btn btn-secondary btn-block">Redefinir senha</button>
+                </form>
+                <div style="text-align: center;"><a href="/signup">Cadastre-se</a></div>
+            </div>
+        </div>
+    </div>
+
+    <%- include('./partials/footer'); -%>

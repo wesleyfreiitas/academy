@@ -1,0 +1,39 @@
+<!-- Barra de navegação -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container">
+        <a class="navbar-brand" href="#">Treinamentos Omnichannel</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="/about">Sobre</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/videos">Vídeos</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="/contacts">Contato</a>
+                </li>
+                <!-- Dropdown de usuário -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button"
+                        data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <i class="fas fa-user"></i> Usuário
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="userDropdown">
+                        <a class="dropdown-item" href="/myAccount">Minha Conta</a>
+                        <a class="dropdown-item" href="/logout">Sair</a>
+                    </div>
+                </li>
+                <!-- Ícone de sininho -->
+                <li class="nav-item">
+                    <a class="nav-link" href="#notifications"><i class="fas fa-bell"></i> Notificações</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
