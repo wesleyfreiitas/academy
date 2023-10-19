@@ -1,13 +1,13 @@
 <%- include('./partials/header') -%>
 <%- include('./partials/navbar') -%>
-    <link rel="stylesheet" href="myaccount.css">
+<link rel="stylesheet" href="myaccount.css">
 </head>
 
-<body class="my-account-page">
-    <div class="my-account">
-        <div class="my-account__container">
-            <div class="my-account__wrapper">
-                <aside class="my-account__menu hidden-print">
+<body >
+    <div >
+        <div >
+            <div >
+                <aside >
                     <ul>
                         <li>
                             <a href="/myAccount" class="active">
@@ -26,30 +26,28 @@
                         </li>
                     </ul>
                 </aside>
-                <main class="my-account__content" role="main">
-                    <h2 class="my-account__heading">Editar Perfil</h2>
-                    <form enctype="multipart/form-data" action="/account"
-                        accept-charset="UTF-8" method="post">
-                        <input type="hidden" name="utf8" value="&#x2713;" autocomplete="off" />
-                        <input type="hidden" name="_method" value="put" autocomplete="off" />
-                        <input type="hidden" name="authenticity_token" value="YOUR_AUTH_TOKEN"
-                            autocomplete="off" />
-                        <input type="hidden" name="user[profile_attributes][id]" value="188431310" />
+                <main  role="main">
+                    <h2 >Editar Perfil</h2>
+                    <form  action="/account"  method="post">
+                        
 
-                        <div class="my-account__profile__wrapper">
+                        <div >
 
-                            <section class="my-account__form-contents">
+                            <section >
                                 <div class="form-group">
                                     <label for="user[email]">E-mail</label>
-                                    <input type="email" id="user[email]" name="user[email]" value="" class="form-control" />
+                                    <input type="email" id="user[email]" name="user[email]" value=""
+                                        class="form-control" />
                                 </div>
                                 <div class="form-group">
                                     <label for="user[first_name]">Nome</label>
-                                    <input type="text" id="user[first_name]" name="user[first_name]" value="" class="form-control" />
+                                    <input type="text" id="user[first_name]" name="user[first_name]" value=""
+                                        class="form-control" />
                                 </div>
                                 <div class="form-group">
                                     <label for="user[last_name]">Sobrenome</label>
-                                    <input type="text" id="user[last_name]" name="user[last_name]" value="" class="form-control" />
+                                    <input type="text" id="user[last_name]" name="user[last_name]" value=""
+                                        class="form-control" />
                                 </div>
                                 <div class="form-group">
                                     <label for="user[profile_attributes][company]">Empresa</label>
@@ -62,20 +60,28 @@
                                         name="user[profile_attributes][headline]" value="" class="form-control" />
                                 </div>
                                 <div class="form-group">
-                                    <label for="user[profile_attributes][custom_profile_fields_attributes][1][value]">CNPJ</label>
-                                    <input type="text" id="user[profile_attributes][custom_profile_fields_attributes][1][value]"
+                                    <label
+                                        for="user[profile_attributes][custom_profile_fields_attributes][1][value]">CNPJ</label>
+                                    <input type="text"
+                                        id="user[profile_attributes][custom_profile_fields_attributes][1][value]"
                                         name="user[profile_attributes][custom_profile_fields_attributes][1][value]"
                                         value="" class="form-control custom-field" />
                                 </div>
                                 <div class="form-group">
-                                    <label for="user[profile_attributes][custom_profile_fields_attributes][2][value]">Endereço (obrigatório)</label>
-                                    <input type="text" id="user[profile_attributes][custom_profile_fields_attributes][2][value]"
+                                    <label
+                                        for="user[profile_attributes][custom_profile_fields_attributes][2][value]">Endereço
+                                        (obrigatório)</label>
+                                    <input type="text"
+                                        id="user[profile_attributes][custom_profile_fields_attributes][2][value]"
                                         name="user[profile_attributes][custom_profile_fields_attributes][2][value]"
                                         value="" required class="form-control custom-field" />
                                 </div>
                                 <div class="form-group">
-                                    <label for="user[profile_attributes][custom_profile_fields_attributes][3][value]">Telefone (obrigatório)</label>
-                                    <input type="text" id="user[profile_attributes][custom_profile_fields_attributes][3][value]"
+                                    <label
+                                        for="user[profile_attributes][custom_profile_fields_attributes][3][value]">Telefone
+                                        (obrigatório)</label>
+                                    <input type="text"
+                                        id="user[profile_attributes][custom_profile_fields_attributes][3][value]"
                                         name="user[profile_attributes][custom_profile_fields_attributes][3][value]"
                                         value="" required class="form-control custom-field" />
                                 </div>

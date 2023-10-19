@@ -3,53 +3,53 @@
 <%- include('./partials/navbar') -%>
 
 
-<body class="my-account-certificates-page ">
-    
-    
+<body>
 
-<div class="my-account">
-  <section class="my-account__banner">
-  <div class="my-account__container">
-    <h2 class="my-account__heading my-account__span">Minha conta</h2>
-  </div>
-</section>
 
-  <div class="my-account__container">
-    <div class="my-account__wrapper">
-      <aside class="my-account__menu hidden-print">
-        
 
-<ul>
-  <li>
-    <a href="/myAccount" class="">
-      Perfil
-    </a>
-  </li>
-  <li>
-    <a href="/account/password" class="">
-      Senha
-    </a>
-  </li>
-  
-    <li>
-      <a href="/account/certificates" class="active">
-        Certificados
-      </a>
-    </li>
-</ul>
+  <div>
+    <section>
+      <div>
+        <h2>Minha conta</h2>
+      </div>
+    </section>
 
-      </aside>
-      <main class="my-account__content" id="main-content" role="main">
-        <h3 class="my-account__subheading">Meus certificados</h3>
-        
-          <p class="my-account__no-certificates">
+    <div>
+      <div>
+        <aside>
+
+
+          <ul>
+            <li>
+              <a href="/myAccount">
+                Perfil
+              </a>
+            </li>
+            <li>
+              <a href="/account/password">
+                Senha
+              </a>
+            </li>
+
+            <li>
+              <a href="/account/certificates" class="active">
+                Certificados
+              </a>
+            </li>
+          </ul>
+
+        </aside>
+        <main role="main">
+          <h3>Meus certificados</h3>
+
+          <p>
             Não há certificados disponíveis para visualização.
           </p>
-        
-      </main>
+
+        </main>
+      </div>
     </div>
-  </div>
 
-  </body>
+</body>
 
-  <%- include('./partials/footer') -%>
+<%- include('./partials/footer') -%>
