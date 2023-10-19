@@ -3,7 +3,7 @@
     <link rel="stylesheet" href="myaccount.css">
 </head>
 
-<body class="my-account-page ">
+<body class="my-account-page">
     <div class="my-account">
         <div class="my-account__container">
             <div class="my-account__wrapper">
@@ -26,126 +26,63 @@
                         </li>
                     </ul>
                 </aside>
-                <main class="my-account__content" id="main-content" role="main">
+                <main class="my-account__content" role="main">
                     <h2 class="my-account__heading">Editar Perfil</h2>
-                    <form id="my_account_19bd2c7499" enctype="multipart/form-data" action="/account"
-                        accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;"
-                            autocomplete="off" /><input type="hidden" name="_method" value="put"
-                            autocomplete="off" /><input type="hidden" name="authenticity_token"
-                            value="IKXfg/OC/aggvz2/IYzSuvTC2RccjMLXyzEjQpXO5YcfSPNz134jeTVTbU0EvxlGqEpHLiakyWUgNDWjfEIj/w=="
-                            autocomplete="off" /><input type="hidden" name="user[profile_attributes][id]"
-                            value="188431310" />
+                    <form enctype="multipart/form-data" action="/account"
+                        accept-charset="UTF-8" method="post">
+                        <input type="hidden" name="utf8" value="&#x2713;" autocomplete="off" />
+                        <input type="hidden" name="_method" value="put" autocomplete="off" />
+                        <input type="hidden" name="authenticity_token" value="YOUR_AUTH_TOKEN"
+                            autocomplete="off" />
+                        <input type="hidden" name="user[profile_attributes][id]" value="188431310" />
 
                         <div class="my-account__profile__wrapper">
 
                             <section class="my-account__form-contents">
-                                <div class="form__group">
-
-                                    <label for="user[email]" class="form__label">
-                                        E-mail
-                                    </label>
-                                    <input type="email" id="user[email]" name="user[email]" value=""
-                                        class="form__control" aria-describedby="user[email]-error" />
-                                    <p id="user[email]-error" class="form__error-msg hidden" role="alert">Por favor
-                                        insira um endereço de e-mail válido</p>
+                                <div class="form-group">
+                                    <label for="user[email]">E-mail</label>
+                                    <input type="email" id="user[email]" name="user[email]" value="" class="form-control" />
                                 </div>
-                                <div class="form__group">
-                                    <div class="input__group">
-
-                                        <label for="user[first_name]" class="form__label">
-                                            Nome
-                                        </label>
-                                        <input type="text" id="user[first_name]" name="user[first_name]" value=""
-                                            class="form__control" aria-describedby="user[first_name]-error" />
-                                        <p id="user[first_name]-error" class="form__error-msg hidden" role="alert">Este
-                                            campo é obrigatório</p>
-                                    </div>
-
-                                    <div class="input__group">
-                                        <label for="user[last_name]" class="form__label">
-                                            Sobrenome
-                                        </label>
-                                        <input type="text" id="user[last_name]" name="user[last_name]" value=""
-                                            class="form__control" aria-describedby="user[last_name]-error" />
-                                        <p id="user[last_name]-error" class="form__error-msg hidden" role="alert">Este
-                                            campo é obrigatório</p>
-                                    </div>
+                                <div class="form-group">
+                                    <label for="user[first_name]">Nome</label>
+                                    <input type="text" id="user[first_name]" name="user[first_name]" value="" class="form-control" />
                                 </div>
-                                <div class="form__group">
-
-                                    <label for="user[profile_attributes][company]" class="form__label">
-                                        Empresa
-                                    </label>
+                                <div class="form-group">
+                                    <label for="user[last_name]">Sobrenome</label>
+                                    <input type="text" id="user[last_name]" name="user[last_name]" value="" class="form-control" />
+                                </div>
+                                <div class="form-group">
+                                    <label for="user[profile_attributes][company]">Empresa</label>
                                     <input type="text" id="user[profile_attributes][company]"
-                                        name="user[profile_attributes][company]" value="" class="form__control" />
+                                        name="user[profile_attributes][company]" value="" class="form-control" />
                                 </div>
-                                <div class="form__group">
-
-                                    <label for="user[profile_attributes][headline]" class="form__label">
-                                        Título profissional
-                                    </label>
+                                <div class="form-group">
+                                    <label for="user[profile_attributes][headline]">Título profissional</label>
                                     <input type="text" id="user[profile_attributes][headline]"
-                                        name="user[profile_attributes][headline]" value="" class="form__control" />
+                                        name="user[profile_attributes][headline]" value="" class="form-control" />
                                 </div>
-                                <div class="form__group">
-                                    <input type="hidden"
-                                        name="user[profile_attributes][custom_profile_fields_attributes][1][custom_profile_field_definition_id]"
-                                        value="46876" />
-
-                                    <label for="user[profile_attributes][custom_profile_fields_attributes][1][value]"
-                                        class="form__label">
-                                        CNPJ
-                                    </label>
-                                    <input type="text"
-                                        id="user[profile_attributes][custom_profile_fields_attributes][1][value]"
+                                <div class="form-group">
+                                    <label for="user[profile_attributes][custom_profile_fields_attributes][1][value]">CNPJ</label>
+                                    <input type="text" id="user[profile_attributes][custom_profile_fields_attributes][1][value]"
                                         name="user[profile_attributes][custom_profile_fields_attributes][1][value]"
-                                        value="" class="form__control custom-field" />
-                                    <p id="custom-field-error" class="form__error-msg hidden" role="alert">Este campo é
-                                        obrigatório</p>
-
+                                        value="" class="form-control custom-field" />
                                 </div>
-
-                                <div class="form__group">
-                                    <input type="hidden"
-                                        name="user[profile_attributes][custom_profile_fields_attributes][2][custom_profile_field_definition_id]"
-                                        value="46877" />
-
-                                    <label for="user[profile_attributes][custom_profile_fields_attributes][2][value]"
-                                        class="form__label">
-                                        Endereço (obrigatório)
-                                    </label>
-                                    <input type="text"
-                                        id="user[profile_attributes][custom_profile_fields_attributes][2][value]"
+                                <div class="form-group">
+                                    <label for="user[profile_attributes][custom_profile_fields_attributes][2][value]">Endereço (obrigatório)</label>
+                                    <input type="text" id="user[profile_attributes][custom_profile_fields_attributes][2][value]"
                                         name="user[profile_attributes][custom_profile_fields_attributes][2][value]"
-                                        value="" required aria-describedby="custom-field-error"
-                                        class="form__control custom-field" />
-                                    <p id="custom-field-error" class="form__error-msg hidden" role="alert">Este campo é
-                                        obrigatório</p>
-
+                                        value="" required class="form-control custom-field" />
                                 </div>
-
-                                <div class="form__group">
-                                    <input type="hidden"
-                                        name="user[profile_attributes][custom_profile_fields_attributes][3][custom_profile_field_definition_id]"
-                                        value="46878" />
-
-                                    <label for="user[profile_attributes][custom_profile_fields_attributes][3][value]"
-                                        class="form__label">
-                                        Telefone (obrigatório)
-                                    </label>
-                                    <input type="text"
-                                        id="user[profile_attributes][custom_profile_fields_attributes][3][value]"
+                                <div class="form-group">
+                                    <label for="user[profile_attributes][custom_profile_fields_attributes][3][value]">Telefone (obrigatório)</label>
+                                    <input type="text" id="user[profile_attributes][custom_profile_fields_attributes][3][value]"
                                         name="user[profile_attributes][custom_profile_fields_attributes][3][value]"
-                                        value="" required aria-describedby="custom-field-error"
-                                        class="form__control custom-field" />
-                                    <p id="custom-field-error" class="form__error-msg hidden" role="alert">Este campo é
-                                        obrigatório</p>
-
+                                        value="" required class="form-control custom-field" />
                                 </div>
-
-                                <div class="form__button-group">
-                                    <input type="submit" value="Salvar alterações" class="button button-primary" />
+                                <div class="form-group">
+                                    <input type="submit" value="Salvar alterações" class="btn btn-primary" />
                                 </div>
+                            </section>
                         </div>
                     </form>
                 </main>
